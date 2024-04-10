@@ -149,7 +149,7 @@ export default function Ingreso() {
   return (
     <div className="w-full h-full flex items-center">
       <div className="w-full flex flex-col gap-5 justify-center items-center -mt-20">
-        <h2 className="text-3xl">Ingresar Codigo de Barra</h2>
+        <h2 className="text-xl md:text-3xl">Ingresar Codigo de Barra</h2>
         <img src="./barcode.png" alt="" className="h-32" />
         <form onSubmit={(e) => handleSubmit(e)} action="#">
           <input
@@ -157,7 +157,7 @@ export default function Ingreso() {
             type="text"
             value={handleInput}
             onChange={(e) => setHandleInput(e.target.value)}
-            className="text-center w-96 ring-1 rounded-sm"
+            className="text-center w-44 md:w-96 ring-1 rounded-sm"
             autoFocus
           />
         </form>

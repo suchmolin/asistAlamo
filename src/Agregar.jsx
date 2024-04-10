@@ -69,11 +69,13 @@ export default function Agregar() {
   };
   return (
     <div className="w-full h-full flex items-center flex-col">
-      <h2 className="w-full ml-12 text-3xl mb-10">Agregar Personal</h2>
+      <h2 className="w-full text-center md:text-left md:ml-12 text-3xl mb-10">
+        Agregar Personal
+      </h2>
       <form
         action="#"
         onSubmit={(e) => handleForm(e)}
-        className="pb-10 w-full px-8"
+        className="pb-10 w-full px-2 md:px-8"
       >
         <div className="flex flex-col py-3">
           <select

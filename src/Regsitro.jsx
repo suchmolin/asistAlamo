@@ -58,7 +58,7 @@ export default function Regsitro() {
 
   return (
     <>
-      <div className="flex gap-5 justify-center">
+      <div className="flex flex-col md:flex-row gap-1 md:gap-5 justify-center">
         <div className="flex flex-col py-1">
           <label htmlFor="desde">Desde</label>
           <input
@@ -117,7 +117,7 @@ export default function Regsitro() {
           Todos los campos son requeridos
         </p>
       )}
-      <div className="w-full flex justify-center py-2">
+      <div className="w-full flex md:justify-center py-5 md:py-2">
         <button
           onClick={consultarLista}
           className="bg-[#03a7bb] px-3 py-1 rounded-sm hover:bg-[#047280] text-white"
